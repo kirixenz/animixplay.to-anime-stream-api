@@ -112,7 +112,7 @@ class GoGoApi:
             f'https://{self.host}/category/{anime}').content, 'html.parser').find('input', 'movie_id').get('value')
 
         html = bs(requests.get(
-            f'https://ajax.gogo-load.com/ajax/load-list-episode?ep_start=0&ep_end=100000&id={anime_id}').content, 'html.parser')
+            f'https://ajax.gogocdn.net/ajax/load-list-episode?ep_start=0&ep_end=100000&id={anime_id}').content, 'html.parser')
 
         li = html.find_all('li')
         eps = []
