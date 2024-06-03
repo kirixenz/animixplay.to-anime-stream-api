@@ -13,7 +13,7 @@ class Anime:
 
 class GoGoApi:
     def __init__(self) -> None:
-        self.host = 'gogoanime.bid'
+        self.host = 'anitaku.so'
 
     def search(self, query, url_only=False):
         soup = bs(requests.get(
